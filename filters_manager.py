@@ -6,7 +6,6 @@ from config import Config, DefaultFilters
 
 logger = logging.getLogger(__name__)
 
-
 class FiltersManager:
     """Менеджер для работы с фильтрами"""
 

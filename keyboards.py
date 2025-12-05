@@ -45,7 +45,6 @@ class BotKeyboards:
                 text="Запустить парсер",
                 callback_data="start_parser"
             )])
-
         return InlineKeyboardMarkup(inline_keyboard=buttons)
 
     def get_confirm_keyboard(self) -> InlineKeyboardMarkup:

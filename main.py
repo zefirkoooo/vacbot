@@ -11,7 +11,6 @@ logger = logging.getLogger(__name__)
 
 async def main():
     config = Config()
-
     if not config.validate():
         logger.error("Ошибка конфигурации. Проверьте настройки!")
         return

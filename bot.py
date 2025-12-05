@@ -129,5 +129,4 @@ class VacancyBot:
         logger.info("Остановка бота...")
         await self.stop_parser()
         await self.bot.session.close()
-
         logger.info("Бот остановлен")

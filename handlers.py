@@ -246,7 +246,6 @@ class BotHandlers:
         """Обработка введенного интервала"""
         try:
             interval = int(message.text.strip())
-
             if not self.bot.filters_manager.validate_interval(interval):
                 min_interval = self.bot.config.MIN_INTERVAL_MINUTES
                 await message.answer(

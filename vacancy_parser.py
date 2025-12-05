@@ -9,7 +9,6 @@ logger = logging.getLogger(__name__)
 
 class VacancyStorage:
     """Хранилище просмотренных вакансий"""
-
     def __init__(self, config: Config):
         self.storage_file = config.SEEN_VACANCIES_FILE
         self._seen_ids: Set[str] = self._load()
@@ -58,7 +57,6 @@ class VacancyStorage:
 
 class VacancyFormatter:
     """Форматирование вакансий для отправки"""
-
     @staticmethod
     def format_vacancy(vacancy: Dict) -> str:
         """Форматирование сообщения о вакансии"""

@@ -10,14 +10,11 @@ class Config:
     BASE_DIR = Path(__file__).parent
     FILTERS_FILE = BASE_DIR / "filters.json"
     SEEN_VACANCIES_FILE = BASE_DIR / "seen_vacancies.json"
-
     HH_API_URL = "https://api.hh.ru/vacancies"
     HH_API_TIMEOUT = 10
-
     MIN_INTERVAL_MINUTES = 5
     DEFAULT_INTERVAL_MINUTES = 15
     MAX_VACANCIES_PER_PAGE = 50
-
     MESSAGE_DELAY_SECONDS = 1
 
     def __init__(self):
